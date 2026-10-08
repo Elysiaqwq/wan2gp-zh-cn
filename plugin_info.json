@@ -1,7 +1,7 @@
 {
   "name": "简体中文汉化包",
   "author": "Elysiaqwq",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "本地简体中文界面汉化，支持中英文切换，不改提示词、生成参数或项目源码。",
   "type": "extension",
   "url": "https://github.com/Elysiaqwq/wan2gp-zh-cn"

@@ -9,7 +9,7 @@ class SimplifiedChinesePlugin(WAN2GPPlugin):
     def __init__(self):
         super().__init__()
         self.name = "简体中文汉化包"
-        self.version = "1.0.0"
+        self.version = "1.1.0"
         self.description = "本地简体中文界面汉化，支持中英文切换。"
         self.type = ["extension"]
 
