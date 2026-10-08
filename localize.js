@@ -11,8 +11,12 @@
         ".orig_name", ".gallery-item .caption", "a[download]", "#gallery .caption",
         ".hierarchy-selector-chip-text", ".hierarchy-search-name", ".hierarchy-search-path",
         ".hierarchy-tree-name", ".hierarchy-item", ".hierarchy-folder",
-        "#family_list", "#model_base_types_list", "#model_list", "#wangp_model_search_results",
-        ".header-markdown-group", ".json-holder", ".code", "pre", "code", "script", "style",
+        ...["family_list", "model_base_types_list", "model_list"].flatMap(id => [
+            `#${id} .wrap`, `#${id} input`, `#${id} [role='option']`, `#${id} .token`, `#${id} option`
+        ]),
+        ".model-name", "#wangp_model_search_results", ".json-holder", ".code", "pre",
+        // Headings use inline code for UI button names such as Add Mask, not program source.
+        "code:not(h1 code, h2 code, h3 code, h4 code)", "script", "style",
         "#wan2gp-zh-cn-toggle", ".wan2gp-zh-cn-selected-label"
     ].join(",");
     const textExcluded = `${protectedContent}, input, textarea, select, option, svg, canvas`;
